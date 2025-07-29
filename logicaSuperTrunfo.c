@@ -13,8 +13,8 @@ int main() {
     unsigned long int habitantes1, habitantes2; 
     int pontosTuristicos1, pontosTuristicos2;
     int atributo1, atributo2;
-    int vitoriasCarta1 = 0; 
-    int vitoriasCarta2 = 0;
+    int vitoriasCarta1; 
+    int vitoriasCarta2;
     float area1, area2;
     float pib1, pib2;
     float densidadePopulacional1, densidadePopulacional2;
@@ -80,6 +80,8 @@ int main() {
 
     //Menu interativo
     do {
+        vitoriasCarta1 = 0;
+        vitoriasCarta2 = 0;
         printf("\n");
         printf("############################################\n");
         printf("Escolha o primeiro atributo para comparar:\n");
