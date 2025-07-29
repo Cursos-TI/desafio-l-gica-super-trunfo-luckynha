@@ -13,6 +13,8 @@ int main() {
     unsigned long int habitantes1, habitantes2; 
     int pontosTuristicos1, pontosTuristicos2;
     int atributo1, atributo2;
+    int vitoriasCarta1 = 0; 
+    int vitoriasCarta2 = 0;
     float area1, area2;
     float pib1, pib2;
     float densidadePopulacional1, densidadePopulacional2;
@@ -99,6 +101,12 @@ int main() {
                 atributoSoma1 = (float) habitantes1;
                 atributoSoma2 = (float) habitantes2;
                 strcpy(nomeAtributo1, "População");
+                if (habitantes1 > habitantes2){
+                    vitoriasCarta1++;
+                }
+                else if (habitantes1 < habitantes2){
+                    vitoriasCarta2++;
+                }
                 printf("\n");
             break;
                 
@@ -106,6 +114,12 @@ int main() {
                 atributoSoma1 = (float) area1;
                 atributoSoma2 = (float) area2;
                 strcpy(nomeAtributo1, "Área");
+                if (area1 > area2){
+                    vitoriasCarta1++;
+                }
+                else if (area1 < area2){
+                    vitoriasCarta2++;
+                }
                 printf("\n");
             break;
                 
@@ -113,6 +127,12 @@ int main() {
                 atributoSoma1 = (float) pib1;
                 atributoSoma2 = (float) pib2;
                 strcpy(nomeAtributo1, "PIB");
+                if (pib1> pib2){
+                    vitoriasCarta1++;
+                }
+                else if (pib1 < pib2){
+                    vitoriasCarta2++;
+                }
                 printf("\n");
             break;
 
@@ -120,13 +140,25 @@ int main() {
                 atributoSoma1 = (float) pontosTuristicos1;
                 atributoSoma2 = (float) pontosTuristicos2;
                 strcpy(nomeAtributo1, "Pontos Turísticos");
+                if (pontosTuristicos1 > pontosTuristicos2){
+                    vitoriasCarta1++;
+                }
+                else if (pontosTuristicos1 < pontosTuristicos2){
+                    vitoriasCarta2++;
+                }
                 printf("\n");
             break;
                 
             case 5:
-                atributoSoma1 = (float) -densidadePopulacional1;
-                atributoSoma2 = (float) -densidadePopulacional2;
+                atributoSoma1 = (float) densidadePopulacional1;
+                atributoSoma2 = (float) densidadePopulacional2;
                 strcpy(nomeAtributo1, "Densidade Populacional");
+                if (densidadePopulacional1 < densidadePopulacional2){
+                    vitoriasCarta1++;
+                }
+                else if (densidadePopulacional1 > densidadePopulacional2){
+                    vitoriasCarta2++;
+                }
                 printf("\n");
             break;
                     
@@ -134,6 +166,12 @@ int main() {
                 atributoSoma1 = (float) pibPerCapita1;
                 atributoSoma2 = (float) pibPerCapita2;
                 strcpy(nomeAtributo1, "PIB per capita");
+                if (pibPerCapita1 > pibPerCapita2){
+                    vitoriasCarta1++;
+                }
+                else if (pibPerCapita1 < pibPerCapita2){
+                    vitoriasCarta2++;
+                }
                 printf("\n");
             break;
 
@@ -141,6 +179,12 @@ int main() {
                 atributoSoma1 = (float) superPoder1;
                 atributoSoma2 = (float) superPoder2;
                 strcpy(nomeAtributo1, "Super Poder");
+                if (superPoder1 > superPoder2){
+                    vitoriasCarta1++;
+                }
+                else if (superPoder1 < superPoder2){
+                    vitoriasCarta2++;
+                }
                 printf("\n");
             break;
 
@@ -180,6 +224,12 @@ int main() {
                     atributoSoma3 = (float) habitantes1;
                     atributoSoma4 = (float) habitantes2;
                     strcpy(nomeAtributo2, "População");
+                    if (habitantes1 > habitantes2){
+                        vitoriasCarta1++;
+                    }
+                    else if (habitantes1 < habitantes2){
+                        vitoriasCarta2++;
+                    }
                     printf("\n");
                 break;
                     
@@ -187,6 +237,12 @@ int main() {
                     atributoSoma3 = (float) area1;
                     atributoSoma4 = (float) area2;
                     strcpy(nomeAtributo2, "Área");
+                    if (area1 > area2){
+                        vitoriasCarta1++;
+                    }
+                    else if (area1 < area2){
+                        vitoriasCarta2++;
+                    }
                     printf("\n");
                 break;
                     
@@ -194,6 +250,12 @@ int main() {
                     atributoSoma3 = (float) pib1;
                     atributoSoma4 = (float) pib2;
                     strcpy(nomeAtributo2, "PIB");
+                    if (pib1 > pib2){
+                        vitoriasCarta1++;
+                    }
+                    else if (pib1 < pib2){
+                        vitoriasCarta2++;
+                    }
                     printf("\n");
                 break;
 
@@ -201,6 +263,12 @@ int main() {
                     atributoSoma3 = (float) pontosTuristicos1;
                     atributoSoma4 = (float) pontosTuristicos2;
                     strcpy(nomeAtributo2, "Pontos Turísticos");
+                    if (pontosTuristicos1 > pontosTuristicos2){
+                        vitoriasCarta1++;
+                    }
+                    else if (pontosTuristicos1 < pontosTuristicos2){
+                        vitoriasCarta2++;
+                    }
                     printf("\n");
                 break;
                     
@@ -208,6 +276,12 @@ int main() {
                     atributoSoma3 = (float) densidadePopulacional1;
                     atributoSoma4 = (float) densidadePopulacional2;
                     strcpy(nomeAtributo2, "Densidade Populacional");
+                    if (densidadePopulacional1 < densidadePopulacional2){
+                        vitoriasCarta1++;
+                    }
+                    else if (densidadePopulacional1 > densidadePopulacional2){
+                        vitoriasCarta2++;
+                    }
                     printf("\n");
                 break;
                         
@@ -215,6 +289,12 @@ int main() {
                     atributoSoma3 = (float) pibPerCapita1;
                     atributoSoma4 = (float) pibPerCapita2;
                     strcpy(nomeAtributo2, "PIB per capita");
+                    if (pibPerCapita1 > pibPerCapita2){
+                        vitoriasCarta1++;
+                    }
+                    else if (pibPerCapita1 < pibPerCapita2){
+                        vitoriasCarta2++;
+                    }
                     printf("\n");
                 break;
 
@@ -222,6 +302,12 @@ int main() {
                     atributoSoma3 = (float) superPoder1;
                     atributoSoma4 = (float) superPoder2;
                     strcpy(nomeAtributo2, "Super Poder");
+                    if (superPoder1 > superPoder2){
+                        vitoriasCarta1++;
+                    }
+                    else if (superPoder1 < superPoder2){
+                        vitoriasCarta2++;
+                    }
                     printf("\n");
                 break;
 
@@ -248,21 +334,21 @@ int main() {
         printf("Carta %s: %.2f\n", codigo1, atributoSoma3);
         printf("Carta %s: %.2f\n\n", codigo2, atributoSoma4);
 
-        if (soma1 > soma2){
+        if (vitoriasCarta1 == 2){
             printf("Soma da carta %s: %.2f\n", codigo1, soma1);
             printf("Soma da carta %s: %.2f\n", codigo2, soma2);
-            printf("A carta %s venceu a rodada!\n", codigo1);
+            printf("\nA carta %s venceu a rodada!\n", codigo1);
         } 
         
-        else if (soma1 == soma2) {
+        else if (vitoriasCarta1 == vitoriasCarta2) {
             printf("Soma da carta %s: %.2f\n", codigo1, soma1);
             printf("Soma da carta %s: %.2f\n", codigo2, soma2);
-            printf("Empate!\n");
+            printf("\nEmpate!\n");
         }
-        else {
+        else if (vitoriasCarta2 == 2) {
             printf("Soma da carta %s: %.2f\n", codigo1, soma1);
             printf("Soma da carta %s: %.2f\n", codigo2, soma2);
-            printf("A carta %s venceu a rodada!\n", codigo2);
+            printf("\nA carta %s venceu a rodada!\n", codigo2);
         }
             
     } 
